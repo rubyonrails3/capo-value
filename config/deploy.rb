@@ -2,7 +2,7 @@
 lock '3.2.1'
 
 set :application, 'capistrano-3.2-app'
-set :repo_url, 'git@example.com:me/my_repo.git'
+set :repo_url, 'git@github.com:rubyonrails3/capo-value.git'
 
 set :user, 'deploy'
 
@@ -10,7 +10,7 @@ set :user, 'deploy'
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call
 
 # Default deploy_to directory is /var/www/my_app
-set :deploy_to, "/home/#{user}/#{application}"
+set :deploy_to, "/home/#{fetch(:user)}/#{fetch(:application)}"
 
 # Default value for :scm is :git
 # set :scm, :git

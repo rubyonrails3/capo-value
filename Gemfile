@@ -30,6 +30,8 @@ gem 'unicorn'
 
 # Use Capistrano for deployment
 gem 'capistrano-rails', group: :development
+gem 'capistrano-rvm'
+gem 'capistrano-bundler', '~> 1.1.2'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
